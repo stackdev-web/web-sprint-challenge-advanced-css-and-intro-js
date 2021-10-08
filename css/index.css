@@ -19,38 +19,8 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
-/* this is a Desktop-first design, that breaks with new style when it finds a screen of 500px or less. Only things that require change for this viewing size need to be changed in the media query below */
-@media only screen and (max-width: 500px) {
-    body {
-      background-color: lightblue; /* test only to ensure media query is working */
-    }
 
 
-    .artists-container{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        width:100%;
-        margin:5% auto;
-    }
-    
-    .artist{
-        width:80%;
-        text-align:center;
-
-    }
-    .artist img{
-        width: 60%;
-        margin-top: 4%;
-    }  
-
-    .artist-text{
-        margin: 3% 0;
-    }
-
-  }
-
-@media only screen and (min-width: 501px) {
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
@@ -165,6 +135,4 @@ button:hover{
 }
 .artist img{
     width:100%;
-}
-
 }
