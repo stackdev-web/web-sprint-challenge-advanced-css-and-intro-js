@@ -19,16 +19,17 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
-/* this is a Desktop-first design, that breaks with new style when it finds a screen of 500px or less. Only things that require change for this viewing size need to be changed in the media query below */
+/* this is a mobile-first design, that breaks with new style when it finds a screen of 500px or more. */
 @media only screen and (max-width: 500px) {
 
 html{
     font-size:62.5%;
 }
 body{
-    font-size:1.6rem;
-    line-height: 1.5;
+    font-size:1.4rem;
+    line-height: 1.25;
     font-family: 'Raleway', sans-serif;	
+    color: #494949;
 }
 h1, p, .name, .bio {	
     font-family: 'Raleway', sans-serif;	
@@ -66,8 +67,7 @@ nav span{
 a {	
     text-decoration: none;	
     color: #494949;
-    font-size:2.25rem;
-
+    font-size:2.25rem;  
 }	
 
 a:hover {	
@@ -129,13 +129,49 @@ button:hover{
     box-shadow: 2px 2px 1px white;
 }
 
+/*Artists Section Styles */
 
+.artists-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    margin-top: 3%;
+}
 
+.artist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80%;
+    padding: 0 10%;
+    text-align:center;
+    margin-bottom: 4%;
+}
+
+.artist a{
+    text-decoration: none;	
+    color: #494949;
+    font-size:2.25rem;  
+    margin: 4% auto;
+}
+
+.artist div{
+    margin-top: 0 auto;
+    margin-bottom: 4%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
 
 }
 
-
+/* This is the media style for screens larger than 501 px. Only things that require change for this viewing size need to be changed in the media query below */
 @media only screen and (min-width: 501px) {
 /*GENERAL STYLES*/
 
