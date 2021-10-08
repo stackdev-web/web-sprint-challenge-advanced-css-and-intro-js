@@ -68,20 +68,20 @@ Follow these steps to set up your project:
 NOTE: tests will run in the JavaScript portion of this challenge only.
 5. cd into your repo
 6. open the terminal in your vs code and type `npm install` -->
-7. next type `npm run test` in your terminal
-8. Complete your work making regular commits to main/ master your codegrade score will update each time you make a push.
+<!-- 7. next type `npm run test` in your terminal
+8. Complete your work making regular commits to main/ master your codegrade score will update each time you make a push. -->
 
 
 ### Testing & Debugging
 
-Open a second terminal inside of your project by clicking on the split terminal icon
+<!-- Open a second terminal inside of your project by clicking on the split terminal icon
 ![alt text](assets/split_terminal.png "Split Terminal")
 
 Inside of your second terminal type `npm start` 
 ![alt text](assets/npm_start.png "type npm start")
 
 You will be running your tests in one terminal and debugging in the other. As you work on your code you should make use of `console.log` to check your progress and debug.
-![alt text](assets/tests_debug_terminal_final.png "your terminal should look like this")
+![alt text](assets/tests_debug_terminal_final.png "your terminal should look like this") -->
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
