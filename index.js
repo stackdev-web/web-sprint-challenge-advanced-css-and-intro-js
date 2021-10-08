@@ -231,7 +231,7 @@ Use getArtistByIndex to do the following:
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(array, indexNum) {
-  return `the artists at index ${indexNum} is ${array[indexNum].name}`;
+  return `the artist at index ${indexNum} is ${array[indexNum].name}`;
 }
 console.log('Task 3 By Index:', getArtistByIndex(artists, 5));
 
@@ -306,7 +306,9 @@ function addArtist(array) {
 
 }
 
-console.log('Task 5 Add Artist:', addArtist(artists));
+console.log('Task 6 Add Artist:', addArtist(artists));
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -315,10 +317,18 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
-}
+function lotsOfArt(array) {
+  let ArtPieces = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].paintings >= 100) {
+      ArtPieces.push(array[i].name);
+    }
+    
+  }
+  return ArtPieces;
 
+}
+console.log('Task 7 100 Art Pieces:', lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
