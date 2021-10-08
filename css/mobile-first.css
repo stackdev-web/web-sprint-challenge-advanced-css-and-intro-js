@@ -202,10 +202,7 @@ a {
 a:hover {	
     font-weight: bold;	
 }	
-.name{	
-    font-size: 150%;	
-    font-weight: 200;	
-}	
+	
 img {	
     height:39rem;	
     object-fit: cover;	
@@ -225,19 +222,30 @@ header{
     display:flex;
     justify-content: center;
 }
+
 nav{
-    width:30%;
+    width:70%;
     display:flex;
-    justify-content:space-evenly;
-    margin-top:5%;
+    justify-content:center;
+    margin-top:6%;
+    align-items: center;
+    margin-bottom: 6%;
 }
+
 nav a{
     color:#626262;
+    font-size: 3rem;
+    margin: 0 3%;
+    transition: 2s;
 }
 nav span{
     border-left:3px solid #626262;
+    height: 70%;
 
 }
+
+
+
 /*Title Section Styles*/
 .title-container{
     display:flex;
@@ -254,14 +262,14 @@ nav span{
     justify-content: center;
     align-items: center;
     height:60vh;
-    margin:5% 0;
+    line-height: 1;
 }	
 .title-container div:hover {	
     opacity: 80%;	
 }	
 
 .title-container hr{
-    width:100%;
+    width:90%;
     margin-top: 3%;
     height: 2px;
     background-color: lightgray;
@@ -275,6 +283,7 @@ button{
     border:2px solid #626262;
     box-shadow: 2px 2px 1px #626262;
     transition: 2s;
+    margin-top: 18px;
 }
 button:hover{
     background-color:#626262;
@@ -299,17 +308,22 @@ button:hover{
 .artist a{
     text-decoration: none;	
     color: #494949;
-    margin: 6% auto;
+}
+
+.name{	
+    font-size: 150%;	
+    font-weight: 200;
+	
 }
 
 .artist div{
-    margin-top: 0;
-    margin-bottom: 4%;
+    margin: 4% 0;
     font-size: 1.5rem;
 }
 .artist img{
     height: 200px;
     width: 70%;
+    margin-bottom: 6%;
 }
 .center{
     display: block;
@@ -317,5 +331,6 @@ button:hover{
     margin-right: auto;
     width: 100%;
   }
+
 
 }
