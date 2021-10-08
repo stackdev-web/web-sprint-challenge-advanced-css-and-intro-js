@@ -24,10 +24,37 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+    Accessibility is what allows people with differing considerations to all view a web page in the same way. For example, using sematic tags allows a machine to help someone with a special mouse or other instrument navigate the page, and using the 'alt' within tags allows a screen reader to explain to the blind what is on a page.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+    a) make sure to add 'alt' tags to every image on the site
+    b) use semantic tags like --nav-- --header-- --table-- 
+    c) use high contrast colors and even, using #494949 instead of solid black for text to make it easier for even non-accessibility users (puts less strain on their eyes).
+
 3. How would you explain the concept of a variable to someone new to programming?
+    A variable holds values for us temporarily (or longer) so that we can manipulate data. An example of using a variable would be if we wanted to calculate miles into kilometers. We would have different values to calculate each time, so a variable for miles and one allows us to plug in a new number of miles each time we need to make a calculation.
+
 4. What is the purpose of using functions in code?
+    Functions are ways of using a 'shortcut' to make common calculations or programming needs. For example, in the example of calculating miles to kilometers, we wouldn't want to have to re-type the calculation code every place where we needed to have this functionality. Instead we create one function, and then reference this function each time we want to complete the complication. In this way we keep our code DRY and are able to reuse common code throughout a program.
+
 5. How do you access a key inside of an object inside of an array?
+    The easiest way, for non-messy data, is to use dot notation and the element's index position. So we have the following array object:
+     const array = [{
+        key1: 10,
+        key2: 'Fred',
+        key3: 'Flinstone'
+    }];
+
+    To access the key here we first reference the array, then the index of the object item we want, then the key, as in:
+ 
+ console.log(array[0].key1)
+
+    This returns the value of 10.  If we only want the name of the keys, then we can try:
+    
+console.log(Object.keys(object1)); 
+
+    This returns a list of all the keys within the object 'object' inside the 'array' array.
+    
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
