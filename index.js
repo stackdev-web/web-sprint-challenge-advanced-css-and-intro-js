@@ -220,7 +220,7 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 
 console.log(artists[8].name)
 artists[8].name = 'Vincent Van Gogh';
-console.log(artists[8].name);
+console.log('Task 2 Change name:', artists[8].name);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -233,7 +233,7 @@ Example, if getArtistByIndex is invoked with the artists array and the number 0,
 function getArtistByIndex(array, indexNum) {
   return `the artists at index ${indexNum} is ${array[indexNum].name}`;
 }
-console.log('Task 3:', getArtistByIndex(artists, 5));
+console.log('Task 3 By Index:', getArtistByIndex(artists, 5));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -245,10 +245,19 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
+function get20s(array) {
+  let centuryArtists = [];
+
+  for (let i = 0; i < array.length; i++) {
+    let yearsSplit = array[i].years.split(" - ");
+    if (yearsSplit[0] >= 1900 && yearsSplit[1] <= 2000) {
+      centuryArtists.push(array[i].name);
+    }
+  }
+  return centuryArtists;
 }
 
+console.log('Task 4 Artist Years:', get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -260,10 +269,12 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(array, removeIndex) {
+  array.splice(removeIndex, 1); 
+  return array.length;
 }
 
+console.log('Task 5 Remove Artist:', removeArtist(artists, 5));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -281,11 +292,21 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  const newArtist = {
+    id: 20,
+    name: 'Roxanne M.', 
+    years: 'LongTimeAgo - 2021',
+    genre: 'Web Design', 
+    nationality: 'American-German',
+    bio: 'Hey, hey, I\'ve seen this one, I\'ve seen this one. This is a classic, this is where Ralph dresses up as the man from space. Radiation suit, of course, cause all of the fall out from the atomic wars. This is truly amazing, a portable television studio. No wonder your president has to be an actor, he\'s gotta look good on television. What\'s a rerun? Then how am I supposed to ever meet anybody. I guess you guys aren\'t ready for that yet. But your kids are gonna love it.'
+  };
+  array.push(newArtist);
+  return array;
+
 }
 
-
+console.log('Task 5 Add Artist:', addArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 

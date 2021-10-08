@@ -14,10 +14,7 @@ You are not allowed to collaborate during the Sprint Challenge. Your work reflec
 In this challenge, you will use a data set of artists to build an "influential artists" webpage. This data comes from a set of "50 influential artists" on [Kaggle](https://www.kaggle.com/ikarus777/best-artworks-of-all-time). We have reduced the data to just 20 artists to make it slightly easier to work with.
 
 ### Commits
-<!-- Initial read of the README.md file. -->
-
 Commit your code regularly and meaningfully. 
-
 ## Interview Questions
 ### (please edit this file and write your answer below each question.)
 
@@ -64,13 +61,13 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-1. Fork the repo
+<!-- 1. Fork the repo
 2. Go into canvas and connect your reop to codegrade
 3. Clone your forked version of the repo
 4. DO NOT CREATE A BRANCH. You will be pushing your changes to the main/master today
 NOTE: tests will run in the JavaScript portion of this challenge only.
 5. cd into your repo
-6. open the terminal in your vs code and type `npm install`
+6. open the terminal in your vs code and type `npm install` -->
 7. next type `npm run test` in your terminal
 8. Complete your work making regular commits to main/ master your codegrade score will update each time you make a push.
 
